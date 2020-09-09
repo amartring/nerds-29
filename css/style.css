@@ -294,3 +294,67 @@ input[type="radio"].visually-hidden {
 .stack-item__button_yellow:active {
   background-color: #E5A722;
 }
+
+
+
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin-right: 230px;
+
+  width: 260px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 81px;
+  height: 81px;
+  background-color: #E1E1E1;
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  border-radius: 50%;
+}
+
+.social-item:hover,
+.social-item:focus {
+  cursor: pointer;
+  background-color: #E74246;
+  background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+
+.social-item:active {
+  cursor: pointer;
+  background-color: #D7373B;
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.social-item:active svg {
+  opacity: 0.3;
+}
+
+
+.footer__slogan {
+  padding-bottom: 10px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.footer__discount {
+  line-height: 24px;
+}
