@@ -85,8 +85,12 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: inline-block;
+  box-sizing: border-box;
 
-  padding: 16px 54px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 54px;
+  padding-right: 54px;
 
   color: #FFFFFF;
   font-weight: 500;
@@ -400,6 +404,7 @@ input[type="radio"].visually-hidden {
 }
 
 .clients {
+  padding-bottom: 80px;
   padding-left: 140px;
   padding-right: 140px;
 }
@@ -467,11 +472,70 @@ input[type="radio"].visually-hidden {
   padding-left: 63px;
 }
 
+.map {
+  padding-top: 54px;
+  padding-left: 140px;
 
+  position: relative;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  min-height: 416px;
+}
 
+.map::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 86px;
+  right: 387px;
+  width: 231px;
+  height: 190px;
+  background-image: url(../img/map-marker.png);
+  background-repeat: no-repeat;
+}
 
+.info {
+  padding-top: 49px;
+  padding-bottom: 47px;
+  padding-left: 50px;
+  padding-right: 50px;
 
+  display: inline-block;
+  box-sizing: border-box;
+  max-width: 319px;
 
+  background-color: #FFFFFF;
+}
+
+.info__title {
+  padding-bottom: 22px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.info__address,
+.info_phone {
+  line-height: 18px;
+  color: #666666;
+}
+
+.info__address {
+  padding-bottom: 16px;
+}
+
+.info__phone {
+  padding-bottom: 35px;
+}
+
+.info__button {
+  padding-left: 43px;
+  padding-right: 43px;
+  font-size: 16px;
+}
 
 .footer {
   display: flex;
