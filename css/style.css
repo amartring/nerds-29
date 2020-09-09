@@ -31,6 +31,8 @@ body {
   margin: 0;
   font-family: 'Roboto';
   font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -39,6 +41,10 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+p{
+  margin: 0;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -59,6 +65,7 @@ input[type="radio"].visually-hidden {
 }
 
 .container {
+  box-sizing: border-box;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -73,6 +80,33 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.button {
+  display: inline-block;
+
+  padding: 16px 54px;
+
+  color: #FFFFFF;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: none;
+  background-color: #FB565A;
+  border-radius: 3px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #E74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #D7373B;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
 .main-header {
   display: flex;
   padding-top: 49px;
@@ -84,7 +118,7 @@ input[type="radio"].visually-hidden {
 .main-header--nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   max-width: 1160px;
 
   font-weight: 500;
@@ -94,6 +128,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header--nav a {
+  display: inherit;
   color: inherit;
   text-decoration: none;
 }
@@ -110,7 +145,7 @@ input[type="radio"].visually-hidden {
   display: block;
 
   padding-right: 10px;
-  padding-top: 9px;
+  padding-bottom: 10px;
 }
 
 .nav-list--item:last-child {
@@ -125,7 +160,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   margin-left: 245px;
-  padding-top: 9px;
+  padding-bottom: 10px;
 }
 
 .main-header--cart-img {
@@ -133,4 +168,52 @@ input[type="radio"].visually-hidden {
 }
 
 
+.promo-container {
+  background-color: #EEEEEE;
+}
 
+.promo {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.slider-item {
+  padding-top: 78px;
+  padding-bottom: 80px;
+
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+.slider-item--expensive {
+  background-image: url(../img/promo-slide_1.png);
+}
+
+.slider-item--mats {
+  background-image: url(../img/promo-slide_2.png);
+}
+
+.slider-item--hardcore {
+  background-image: url(../img/promo-slide_3.png);
+}
+
+.promo-text {
+  max-width: 540px;
+}
+
+.promo-text--big {
+  padding-bottom: 37px;
+
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.promo-text--small {
+  padding-bottom: 28px;
+
+  max-width: 416px;
+
+  font-size: 16px;
+  line-height: 24px;
+}
