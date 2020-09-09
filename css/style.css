@@ -399,6 +399,77 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
 }
 
+.clients {
+  padding-left: 140px;
+  padding-right: 140px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 2px solid #EEEEEE;
+  border-bottom: 2px solid #EEEEEE;
+}
+
+.clients__item {
+  position: relative;
+  padding-top: 46px;
+  padding-bottom: 37px;
+}
+
+.clients__item svg {
+  opacity: 0.2;
+}
+
+.clients__item svg:hover,
+.clients__item svg:focus {
+  opacity: 1;
+}
+
+.clients__item svg:active {
+  opacity: 0.1;
+}
+
+.clients__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 28px);
+  right: 0;
+  width: 2px;
+  height: 52px;
+  background-color: #EEEEEE;
+}
+.clients__item:last-child:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+}
+
+.clients__item_html {
+  padding-left: 32px;
+  padding-right: 51px;
+}
+
+.clients__item_borodinski {
+  padding-left: 45px;
+  padding-right: 46px;
+}
+
+.clients__item_pink {
+  padding-left: 58px;
+  padding-right: 57px;
+}
+
+.clients__item_mishka {
+  padding-left: 63px;
+}
+
+
+
+
 
 
 
