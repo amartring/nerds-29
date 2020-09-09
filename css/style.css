@@ -32,7 +32,7 @@ body {
   font-family: 'Roboto';
   font-weight: 400;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 ul {
@@ -41,9 +41,36 @@ ul {
   list-style: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.base-link:hover,
+.base-link:focus {
+  color: #FB565A;
+}
+
+.base-link:active {
+  color: #000000;
+  opacity: 0.3;
 }
 
 .main-header {
@@ -51,7 +78,7 @@ ul {
   padding-top: 49px;
   padding-left: 140px;
   padding-right: 140px;
-  background-color: #eeeeee;
+  background-color: #EEEEEE;
 }
 
 .main-header--nav {
@@ -104,5 +131,6 @@ ul {
 .main-header--cart-img {
   padding-right: 25px;
 }
+
 
 
