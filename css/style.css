@@ -472,6 +472,10 @@ input[type="radio"].visually-hidden {
   padding-left: 63px;
 }
 
+.contacts {
+  padding-bottom: 17px;
+}
+
 .map {
   padding-top: 54px;
   padding-left: 140px;
@@ -551,7 +555,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   flex-wrap: wrap;
 
-  margin-right: 230px;
+  margin-right: 140px;
 
   width: 260px;
 }
