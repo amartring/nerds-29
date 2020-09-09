@@ -22,13 +22,87 @@
   font-style: normal;
 }
 
+:root {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto';
   font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+.main-header {
+  display: flex;
+  padding-top: 49px;
+  padding-left: 140px;
+  padding-right: 140px;
+  background-color: #eeeeee;
+}
+
+.main-header--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.main-header--nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  min-width: 440px;
+}
+
+.nav-list--item {
+  display: block;
+
+  padding-right: 10px;
+  padding-top: 9px;
+}
+
+.nav-list--item:last-child {
+  padding-right: 0;
+}
+
+.main-header--logo {
+  margin-right: 202px;
+}
+
+.main-header--cart {
+  display: flex;
+  align-items: center;
+  margin-left: 245px;
+  padding-top: 9px;
+}
+
+.main-header--cart-img {
+  padding-right: 25px;
+}
+
+
